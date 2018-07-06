@@ -1,0 +1,26 @@
+<- Matrix ----------------------------------------------------------------------
+The Matrix class handles matrices.
+An instance can be constructed by passing a presset in an indexed array with
+    additional values:
+Matrix(array('preset' => 'IDENTITY'))
+    -> returns an identity matrix.
+Matrix(array('preset' => 'TRANSLATION', 'vtc' => Vector))
+    -> returns a translation matrix.
+Matrix(array('preset' => 'SCALE', 'scale' => k))
+    -> returns a sclaing matrix.
+Matrix(array('preset' => 'RX', 'angle' => angle))
+    -> returns a rotation matrix around the x axis.
+Matrix(array('preset' => 'RY', 'angle' => angle))
+    -> returns a rotation matrix around the y axis.
+Matrix(array('preset' => 'RZ', 'angle' => angle))
+    -> returns a rotation matrix around the z axis.
+Matrix(array('preset' => 'PROJECTION', 'fov' => fov, 'near' => near plane, 'far' => far plane, 'near' => image aspect ratio))
+    -> returns a projection matrix.
+The class provides the following methods :
+
+Matrix mult( Matrix $rhs );
+	Applies the matrix with current instance and resturns the result.
+
+Vertex transformVertex( Vertex $vtx );
+	Applies a matrix to a vertex and returns the result.
+---------------------------------------------------------------------- Matrix ->

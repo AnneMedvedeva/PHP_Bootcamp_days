@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+		.outer {
+		    display: table;
+		    position: absolute;
+		    height: 80%;
+		    width: 100%;
+			}
+		.middle {
+		    display: table-cell;
+		    vertical-align: middle;
+			}
+		.center {
+			margin-left: 30%;
+			margin-right: 30%;
+			vertical-align: center;
+		}
+		.container {
+			-webkit-border-radius: 12px;
+			border-radius: 12px;
+			border: 2px solid black ;
+		}
+		.todo {
+			text-align : center;
+			margin: 10px;
+			outline: 1px solid #428EFF;
+			outline-offset: 1px;
+			cursor: default;	
+		}
+		#add_todo {
+			margin-right: 30%;
+			margin-left: 30%;
+			width: 40%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		</style>
+		<title>index</title>
+	</head>
+	<body>
+		<div class="outer">
+			<div class="middle">
+				<div class="center container" id="ft_list">
+					<input id="add_todo" type="submit" value="new">
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript" src="./todo.js"></script>
+	</body>
+</html>
+
+

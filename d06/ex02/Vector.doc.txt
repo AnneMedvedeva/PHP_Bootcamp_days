@@ -1,0 +1,41 @@
+<- Vector ----------------------------------------------------------------------
+The Vector class handles a vector in a 3D space.
+
+An instance can be constructed from a 'orig' vertex and a 'dest' one.
+new Vector( array( 'orig' => $vtxO, 'dest' => $vtxX ) );
+
+Where $vtx0 and $vtxX are instances of the Vertex class
+The default orig is (0, 0, 0)
+
+The class provides not only basic functions such as getters, but also:
+
+float magnitude()
+    Returns the length of the vector
+
+Vector normalize()
+    Returns the normalized vector
+
+Vector add( Vector $rhs )
+    Returns a new vector that represent the sum between the two vectors
+
+Vector sub( Vector $rhs )
+    Returns a new vector that represent the difference between the two vectors
+
+Vector opposite()
+    Returns the opposite vector
+
+Vector scalarProduct( $k )
+    Returns a new Vector scaled by $k
+
+float dotProduct( Vector $rhs )
+    Returns the dot product between the two vectors
+
+float cos( Vector $rhs )
+    Returns the cos in radian between the two vectors
+
+Vector crossProduct( Vector $rhs )
+    Returns the cross product between the two vectors (Right handed)
+
+NB: This class is immutable.
+
+---------------------------------------------------------------------- Vector ->
